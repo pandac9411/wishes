@@ -134,10 +134,10 @@ h1 span{display:block;color:#e9b786}
   .scene{background:radial-gradient(ellipse at 50% 56%,#333046,#192239 51%,#0b1222 91%)}
   .spread{
     grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "art" "actions";
-    grid-template-rows:auto;gap:18px;padding:31px 0 23px;text-align:center;
+    grid-template-rows:auto;gap:12px;padding:22px 0 18px;text-align:center;
   }
   .kicker{justify-content:center}.kicker::before{display:none}
-  h1{margin:13px 0 10px;font-size:clamp(38px,10vw,58px)}
+  h1{margin:13px 0 10px;font-size:clamp(30px,9vw,58px)}
   h1 span{display:inline}
   .illustration{width:min(100%,400px);justify-self:center}
   .stage{width:min(100%,340px)}
@@ -265,6 +265,7 @@ const candles = colors.map((_, index) => {
       hint.textContent = '有一封信，等你打开。';
       mail.hidden = false;
       mail.focus({preventScroll:true});
+      mail.scrollIntoView({block:"nearest"});
     }
   };
   document.querySelector('.candles').append(button);
@@ -416,6 +417,7 @@ replay.onclick = () => {
   mail.disabled = false;
   replay.hidden = true;
   candles[0].focus({preventScroll:true});
+  candles[0].scrollIntoView({block:"nearest"});
 };
 addEventListener('resize', resize);
 resize();
