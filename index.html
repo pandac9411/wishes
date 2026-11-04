@@ -94,7 +94,7 @@ h1 span{display:block;color:#e9b786}
 #count{font-variant-numeric:tabular-nums;letter-spacing:.1em}
 #mail{
   position:relative;isolation:isolate;display:block;width:184px;height:91px;
-  margin:18px 0 0;padding:41px 5px 7px;overflow:hidden;
+  margin:18px auto 0;padding:41px 5px 7px;overflow:hidden;
   border:1px solid #cda585;border-radius:3px;color:#5e3632;
   background:linear-gradient(150deg,#edd1ae,#c79479);box-shadow:0 12px 25px #05070e75;
   animation:arrive .58s both;
@@ -144,7 +144,6 @@ h1 span{display:block;color:#e9b786}
   .orbit{inset:-6% 0 2%;width:100%}
   .actions{min-height:0;margin-top:1px}
   .progress{justify-content:center}
-  #mail{margin-inline:auto}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:1ms!important;animation-delay:0ms!important;transition:none!important}
@@ -165,7 +164,7 @@ h1 span{display:block;color:#e9b786}
     <div class="intro">
       <div class="kicker">A BIRTHDAY LETTER</div>
       <h1>今晚，<span>为你点灯</span></h1>
-      <p class="dedication">留一点烛光，庆祝你又长大一岁。</p>
+      <p class="dedication">小于同学，生日快乐！今晚的烛光为你点亮。</p>
     </div>
     <figure class="illustration">
       <svg class="orbit" viewBox="0 0 480 360" fill="none" aria-hidden="true">
@@ -186,21 +185,21 @@ h1 span{display:block;color:#e9b786}
         <progress id="meter" max="5" value="0" aria-label="蜡烛点亮进度"></progress>
         <span id="count" aria-hidden="true">0 / 5</span>
       </div>
-      <button id="mail" type="button" hidden><span>给今天的你</span></button>
+      <button id="mail" type="button" hidden><span>给小于同学</span></button>
       <button id="replay" type="button" hidden>再点一次蜡烛 ↻</button>
     </div>
   </div>
   <button id="letter" type="button" hidden>
     <small class="letter-kicker">✦　生日来信　✦</small>
-    <strong>生日快乐！</strong>
+    <strong>小于同学，生日快乐！</strong>
     <span class="line" style="--line:1">愿你新的一岁，</span>
     <span class="line" style="--line:2">有说走就走的勇气，</span>
     <span class="line" style="--line:3">也有慢慢享受日常的闲心。</span>
     <span class="line" style="--line:4">今天记得多吃一口蛋糕。</span>
-    <small>—— 惦记你的朋友</small>
+    <small>—— 卑微小魏</small>
     <small>轻点信纸，看看最后的惊喜</small>
   </button>
-  <footer class="colophon"><span>✦　BIRTHDAY EDITION</span><span>为今天的你</span></footer>
+  <footer class="colophon"><span>✦　BIRTHDAY EDITION</span><span>卑微小魏 敬赠</span></footer>
 </main>
 <script>
 const get = id => document.getElementById(id);
